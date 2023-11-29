@@ -1,3 +1,171 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+a,
+img,
+center,
+ul,
+li,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+header,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.btn {
+  border-radius: 15px;
+  padding: 0.5em;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 1rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: beige;
+  color: purple;
+  transition: 900ms;
+  scale: 1.5;
+}
+
+.btn1 {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border: 3px solid rgba(255, 255, 255, 0.375);
+}
+
+.btn2 {
+  background-color: blue;
+  color: lightblue;
+  font-weight: bold;
+  border: none;
+  border: 3px solid rgba(0, 170, 255, 0.482);
+}
+
+.btn3 {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border: 3px solid rgba(255, 255, 255, 0.375);
+}
+
 body {
   margin: 0;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  font-family: Verdana, Geneva, sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  height: 80vh;
+  opacity: 0.8;
+  background-position: center;
+}
+body nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: grey;
+}
+body nav img {
+  overflow: hidden;
+  height: 50px;
+  vertical-align: bottom;
+  background-color: transparent;
+}
+body nav ul {
+  display: flex;
+}
+body nav ul li {
+  padding: 1rem;
+}
+body nav ul li a {
+  padding: 0.5em;
+  text-decoration: none;
+  color: black;
+  background-color: green;
+  border-radius: 15px;
+}
+body main {
+  padding: 3rem;
+}
+body main section {
+  background-color: grey;
+  border-radius: 12px;
+  padding: 2rem;
+  color: white;
+  position: relative;
+  animation: inside 1000ms linear initial backwards;
+}
+body main section h1 {
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  animation: inside 1000ms linear initial backwards;
+}
+body main section img {
+  max-height: 200px;
+  float: right;
+  border-radius: 20px;
+}
+body main section img:hover {
+  transition: 500ms;
+  transform: rotate(360deg);
+  scale: 1.4;
+  cursor: pointer;
+}
+body aside {
+  margin: 3rem;
+  border-radius: 15px;
+  background-color: white;
+}
+body aside table {
+  margin-inline: auto;
+}
+body aside table img {
+  height: 150px;
+  margin: 2rem;
+  border-radius: 14px;
+}
+body h1 {
+  animation: inside 1000ms linear initial backwards;
+}
+
+@keyframes inside {
+  0% {
+    transform: translateY(300px);
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+.btn {
+  border-radius: 15px;
+  padding: 0.5em;
+  font-family: $main-font;
+  margin: $pm1;
+  cursor: pointer;
+  &:hover {
+    background-color: beige;
+    color: purple;
+    transition: 900ms;
+    scale: 1.5;
+  }
+}
+.btn1 {
+  background-color: $warning;
+  color: black;
+  font-weight: $font-weight2;
+  border: none;
+  border: 3px solid rgba(255, 255, 255, 0.375);
+}
+.btn2 {
+  background-color: $primary;
+  color: $info;
+  font-weight: $font-weight2;
+  border: none;
+  border: 3px solid rgba(0, 170, 255, 0.482);
+}
+.btn3 {
+  background-color: $danger;
+  color: $font-color;
+  font-weight: $font-weight2;
+  border: none;
+  border: 3px solid rgba(255, 255, 255, 0.375);
+}
